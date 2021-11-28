@@ -104,7 +104,6 @@ footer div {
 }
 
 .row {
-    display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -123,8 +122,11 @@ footer div {
     width: 45%;
 }
 
-.run-buddy {
-    position: relative;
+.run-buddy div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    flex-direction: column;
 }
 
 .run-buddy img {
@@ -132,20 +134,20 @@ footer div {
     width: 100%;
     vertical-align: middle;
     border-style: solid;
+    position: relative;
+    flex-basis: 100%;
+    z-index: -20;
 }
 
 .project-name {
-    margin-top: -100px;
-    margin-bottom: 50px;
-    padding: 50px;
+    padding: 0px;
+    margin: 10px 0;
+    position: absolute;
 }
 
 .project-name-text {
     color: black;
     font-size: 50px;
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
     background-color: black;
     color: #0bc0a5;
     padding-left: 20px;
@@ -197,8 +199,19 @@ footer div {
 }
 
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 570px) {
     
+    .my-work section {
+        margin: 0;
+        padding: 0;
+    }
+   
+    .row {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
     .run-buddy {
         width: 100%;
     }
