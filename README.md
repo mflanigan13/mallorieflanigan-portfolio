@@ -9,3 +9,10 @@
 - my work section
 - contact section
 
+## Deployed Application
+https://mflanigan13.github.io/mallorieflanigan-portfolio/
+
+## Image
+assets\portfolio-image.png
+
+
